@@ -1,0 +1,20 @@
+.home-nav {
+    width: 100vw;
+    height: 12vh;
+    background: #41b2f4;
+    display: flex;
+    align-items: center;
+}
+
+#home-button {
+    font-size: 1.7rem;
+    background: transparent;
+    border: none;
+    margin-left: 30px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+#home-button:hover {
+    cursor: pointer;
+}
