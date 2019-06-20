@@ -9,23 +9,24 @@ class Content extends Component {
     this.state = {
       i: 0
     };
+    
     this.handlePrevious = this.handlePrevious.bind(this);
     this.handleNext = this.handleNext.bind(this);
   }
 
   handlePrevious() {
-    if (this.state.i >= 0) {
+    if (this.state.i > 0) {
       this.setState({ i: this.state.i - 1 });
-    } else {
-      this.setState({ i: this.state.i });
+    } else if(this.state.i = -1){
+      this.setState({i: this.state.i = 24})
     }
   }
 
   handleNext() {
-    if (this.state.i <= 24) {
+    if (this.state.i < 24) {
       this.setState({ i: this.state.i + 1 });
-    } else {
-      this.setState({ i: this.state.i });
+    } else if(this.state.i = 25 ) {
+      this.setState({i: this.state.i = 0})
     }
   }
 
